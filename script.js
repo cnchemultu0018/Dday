@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const timeDifference = (ddayDate.getTime() + KR_TIME_DIFF) - currentDate.getTime();
 
         // 일, 시간, 분, 초 계산
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24) + 1);
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
